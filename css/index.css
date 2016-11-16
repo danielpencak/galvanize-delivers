@@ -21,6 +21,12 @@
   margin-top: 0;
 }
 
+.food {
+  font-weight: 300;
+  line-height: 20px;
+  font-size: 18px;
+}
+
 i {
   vertical-align: bottom;
 }
