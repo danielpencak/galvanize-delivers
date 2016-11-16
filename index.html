@@ -4,52 +4,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Galvanize Delivers</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script defer src="js/materialize.js"></script>
+    <script defer src="js/index.js"></script>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="nav-wrapper blue darken-3">
-          <a href="index.html" class="title brand-logo">Galvanize Delivers</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="order.html">Order Delivery</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="hero">
-        <img class="responsive-img" style="height: 90vh" src="img/hero.jpg" alt="Your Dining Experience">
-        <div class="order">
-          <h1 class="heroTitle white-text">Fine Dining, Delivered.</h1>
-          <a class="waves-effect waves-light btn-large pink lighten-1 box">Place an Order</a>
-        </div>
+    <nav>
+      <div class="nav-wrapper blue darken-3">
+        <a href="index.html" class="title brand-logo">Galvanize Delivers</a>
+        <a href="order.html" data-activates="mobile-demo" class="title button-collapse"><i class="material-icons">reorder</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="order.html">Order Delivery</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="order.html">Order Delivery</a></li>
+        </ul>
       </div>
+    </nav>
+    <header class="hero valign-wrapper">
+      <h1 class="heroTitle center-align white-text">Fine Dining, Delivered.</h1>
+      <a class="waves-effect waves-light btn-large pink lighten-1 box">Place an Order</a>
     </header>
-    <main class="container">
-      <div class="row promotions">
-        <div class="col s12 m6 l4">
-          <i class="material-icons small pink-text text-lighten-1 shoppingIcon">shopping_basket</i>
-          <h5 class="shopOnline pink-text text-lighten-1">Shop Online</h5>
-          <p>
-            Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.
-          </p>
-        </div>
-        <div class="col s12 m6 l4">
-          <i class="material-icons small pink-text text-lighten-1 shippingIcon">store</i>
-          <h5 class="delivery pink-text text-lighten-1">Fast Delivery</h5>
-          <p>
-          You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We'd ask what that is, but gFood respects your privacy.
-          </p>
-        </div>
-        <div class="col s12 m12 l4">
-          <i class="material-icons small pink-text text-lighten-1 discountIcon">loyalty</i>
-          <h5 class="discounts pink-text text-lighten-1">Great Deals</h5>
-          <p>
-            Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.
-          </p>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <h5 class="pink-text text-lighten-1"><i class="material-icons small pink-text text-lighten-1 shoppingIcon">shopping_basket</i> Shop Online </h5>
+            <p>
+              Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.
+            </p>
+          </div>
+          <div class="col s12 m4">
+            <h5 class="pink-text text-lighten-1"><i class="material-icons small pink-text text-lighten-1 shippingIcon">local_shipping</i> Fast Delivery </h5>
+            <p>
+            You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We'd ask what that is, but gFood respects your privacy.
+            </p>
+          </div>
+          <div class="col s12 m4">
+            <h5 class="pink-text text-lighten-1"><i class="material-icons small pink-text text-lighten-1 discountIcon">local_atm</i> Great Deals </h5>
+            <p>
+              Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.
+            </p>
+          </div>
         </div>
       </div>
     </main>
