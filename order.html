@@ -35,7 +35,7 @@
                   <div class="col s12 m12 l6">
                     <div class="card">
                       <div class="card-image">
-                        <img src="img/burger.jpg">
+                        <img src="img/burger.jpg" alt="burger">
                       </div>
                       <div class="card-content">
                         <h6 class="food">Royale with Cheese</h6>
@@ -51,7 +51,7 @@
                   <div class="col s12 m12 l6">
                     <div class="card">
                       <div class="card-image">
-                        <img src="img/pizza.jpg">
+                        <img src="img/pizza.jpg" alt="pizza">
                       </div>
                       <div class="card-content">
                         <h6 class="food">Arugula Pie</h6>
@@ -67,7 +67,7 @@
                   <div class="col s12 m12 l6">
                     <div class="card">
                       <div class="card-image">
-                        <img src="img/ribs.jpg">
+                        <img src="img/ribs.jpg" alt="ribs">
                       </div>
                       <div class="card-content">
                         <h6 class="food">Smoked Swine</h6>
@@ -83,7 +83,7 @@
                   <div class="col s12 m12 l6">
                     <div class="card">
                       <div class="card-image">
-                        <img src="img/ice_cream.jpg">
+                        <img src="img/ice_cream.jpg" alt="ice cream">
                       </div>
                       <div class="card-content">
                         <h6 class="food">Ice Cream Biscut</h6>
@@ -144,23 +144,23 @@
               <form class="col s12">
                   <div class="input-field col s12">
                     <i class="material-icons prefix pink-text">account_circle</i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">Name</label>
+                    <input id="name" type="text" class="validate">
+                    <label for="name" data-error="required">Name</label>
                   </div>
                   <div class="input-field col s12">
                     <i class="material-icons prefix pink-text">phone</i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Phone Number</label>
+                    <input id="phone_number" type="tel" class="validate">
+                    <label for="phone_number" data-error="required">Phone Number</label>
                   </div>
                   <div class="input-field col s12">
                     <i class="material-icons prefix pink-text">business</i>
-                    <input id="icon_address" type="text" class="validate">
-                    <label for="icon_address">Address</label>
+                    <input id="address" type="text" class="validate">
+                    <label for="address" data-error="required">Address</label>
                   </div>
               </form>
             </div>
             <div class="row">
-              <div class="col offset-m3 offset-s2">
+              <div class="col offset-m3 offset-s3">
                 <a class="waves-effect waves-light btn-large pink lighten-1 box">Place Order</a>
               </div>
             </div>
