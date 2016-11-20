@@ -27,7 +27,7 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col s12 m6">
+          <div class="col s12 m6" id="menu">
             <header>
               <h4>Menu</h4>
             </header>
@@ -39,9 +39,7 @@
                       </div>
                       <div class="card-content">
                         <h6 class="food">Royale with Cheese</h6>
-                        <p>
-                          $8.99
-                        </p>
+                        <p class="price">$8.99</p>
                       </div>
                       <div class="card-action">
                         <a href="#" class="pink-text">ADD TO ORDER</a>
@@ -55,7 +53,7 @@
                       </div>
                       <div class="card-content">
                         <h6 class="food">Arugula Pie</h6>
-                        <p>$11.99</p>
+                        <p class="price">$11.99</p>
                       </div>
                       <div class="card-action">
                         <a href="#" class="pink-text">ADD TO ORDER</a>
@@ -71,9 +69,7 @@
                       </div>
                       <div class="card-content">
                         <h6 class="food">Smoked Swine</h6>
-                        <p>
-                          $14.99
-                        </p>
+                        <p class="price">$14.99</p>
                       </div>
                       <div class="card-action">
                         <a href="#" class="pink-text">ADD TO ORDER</a>
@@ -87,7 +83,7 @@
                       </div>
                       <div class="card-content">
                         <h6 class="food">Ice Cream Biscut</h6>
-                        <p>$7.99</p>
+                        <p class="price">$7.99</p>
                       </div>
                       <div class="card-action">
                         <a href="#" class="pink-text">ADD TO ORDER</a>
@@ -108,35 +104,19 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Royale with Cheese</td>
-                  <td class="right-align">$8.99</td>
-                </tr>
-                <tr>
-                  <td>Arugula Pie</td>
-                  <td class="right-align">$11.99</td>
-                </tr>
-                <tr>
-                  <td>Smoked Swine</td>
-                  <td class="right-align">$14.99</td>
-                </tr>
-                <tr>
-                  <td>Ice Cream Biscut</td>
-                  <td class="right-align">$7.99</td>
-                </tr>
               </tbody>
               <tfoot>
                 <tr>
                   <td class="right-align">Subtotal</td>
-                  <td class="right-align">$43.96</td>
+                  <td class="right-align" id="subtotal">$0.00</td>
                 </tr>
                 <tr>
                   <td class="right-align">Tax</td>
-                  <td class="right-align">$4.40</td>
+                  <td class="right-align" id="tax">$0.00</td>
                 </tr>
                 <tr>
                   <td class="right-align">Total</td>
-                  <td class="right-align">$48.36</td>
+                  <td class="right-align" id="total">$0.00</td>
                 </tr>
               </tfoot>
             </table>
@@ -157,13 +137,19 @@
                     <input id="address" type="text" class="validate">
                     <label for="address" data-error="required">Address</label>
                   </div>
+                <!-- </div> -->
+                <div class="row">
+                  <div class="col offset-m3 offset-s3">
+                    <a class="waves-effect waves-light btn-large pink lighten-1 box">Place Order</a>
+                  </div>
+                </div>
               </form>
             </div>
-            <div class="row">
+            <!-- <div class="row">
               <div class="col offset-m3 offset-s3">
                 <a class="waves-effect waves-light btn-large pink lighten-1 box">Place Order</a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
