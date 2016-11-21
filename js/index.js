@@ -43,4 +43,22 @@
     $tr.append($tdPrice);
     $tbody.append($tr);
   });
+
+  $('.place').click(() => {
+    if ($tdTotal.text() === '$0.00') {
+      Materialize.toast('Please add an item to your order.', 4000, 'toast');
+    }
+    else if ($('#name').val() === '') {
+      Materialize.toast('Please add your name.', 4000, 'toast');
+    }
+    else if ($('#phone_number').val() === '') {
+      Materialize.toast('Please add a phone number.', 4000, 'toast');
+    }
+    else if ($('#address').val() === '') {
+      Materialize.toast('Please add an address.', 4000, 'toast');
+    }
+    else {
+      Materialize.toast('Your order has been placed.', 4000, 'toast');
+    }
+  });
 })();
