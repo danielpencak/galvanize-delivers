@@ -38,8 +38,7 @@
 
     // Appending Table
     $tr.append($tdFood.text(food));
-    $tr.append($tdPrice.text(price));
-    $tdPrice.addClass('right-align');
+    $tdPrice.addClass('right-align').text(price);
     $tr.append($tdPrice);
     $tbody.append($tr);
   });
