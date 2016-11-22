@@ -5,9 +5,7 @@
   const $tdTax = $('#tax');
   const $tdTotal = $('#total');
 
-  (function() {
-    $('.button-collapse').sideNav();
-  })();
+  $('.button-collapse').sideNav();
 
   const totalCalculation = function(currentSub, itemPrice) {
     const currentSubtotalNumb = parseFloat((currentSub).slice(1));
