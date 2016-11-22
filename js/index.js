@@ -19,6 +19,8 @@
   };
 
   $('#menu').on('click', 'a', (event) => {
+    event.preventDefault();
+
     // DOM Element Creation and Traversal
     const $tr = $('<tr>');
     const $tdFood = $('<td>');
@@ -42,16 +44,17 @@
   });
 
   $('.place').click(() => {
+    event.preventDefault();
     if ($tdTotal.text() === '$0.00') {
       Materialize.toast('Please add an item to your order.', 4000, 'toast');
     }
-    else if ($('#name').val() === '') {
+    else if ($('#name').val().trim() === '') {
       Materialize.toast('Please add your name.', 4000, 'toast');
     }
-    else if ($('#phone_number').val() === '') {
+    else if ($('#phone_number').val().trim() === '') {
       Materialize.toast('Please add a phone number.', 4000, 'toast');
     }
-    else if ($('#address').val() === '') {
+    else if ($('#address').val().trim() === '') {
       Materialize.toast('Please add an address.', 4000, 'toast');
     }
     else {
